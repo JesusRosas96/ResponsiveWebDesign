@@ -1,0 +1,39 @@
+body {
+    background: white;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: helvetica, arial;
+    font-size: 14px;
+    margin: 0px;
+}
+
+section {
+    background: #D3AD97;
+}
+
+header {
+    background: #F6E3CE;
+    text-align: center;
+    font-size: 30px;
+}
+
+article {
+    background: #D3AD97;
+    color: #444;
+    padding: 1rem;
+}
+
+footer {
+    background: #B0A198;
+    padding: 1rem;
+    font-size: 18px;
+    text-align: left;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
