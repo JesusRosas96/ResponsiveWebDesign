@@ -10,11 +10,11 @@ body {
     text-align: center;
     font-family: helvetica, arial;
     font-size: 14px;
-    margin: 0px;
+    margin: 0;
 }
 
 section {
-    background: #D3AD97;
+    background-color:  white;
 }
 
 header {
@@ -44,31 +44,107 @@ p {
   text-align: center;
 }
 
-.contenedor-pequeño, .contenedor-grande {
-  background: #000000;
-  width: 50%;
+.encabezado, .contenido, .contenido-lateral, .pie-pagina {
+  padding: 1em 2em;
 }
 
-img {
+.contenido, .contenido-lateral, .pie-pagina {
+  float: left;
+  box-sizing: border-box;
+}
+
+.encabezado{
+  background: #2E9AFE;
+  height: 100px;
+}
+
+.contenido {
+  width: 60%;
+}
+
+.contenido-lateral {
+  width: 40%;
+  background: #5858FA;
+  height: 500px;
+}
+
+.post {
+  background: #A9D0F5;
+  height: 100px;
+  margin-bottom: 1em;
+}
+
+.pie-pagina {
   width: 100%;
-  max-width: 420px;
+  background: #0431B4;
+  height: 50px;
 }
 
-video {
-  width: 100%
+@media screen and (min-width: 780px) and (max-width: 1024px){
+  .encabezado{
+    background: #FE2E2E;
+  }
+
+  .contenido{
+    width: 50%;
+  }
+
+  .contenido-lateral{
+    background: #FF4000;
+    width: 50%;
+  }
+
+  .post{
+    background: #F78181;
+  }
+
+  .pie-pagina{
+    background: #FF0000;
+  }
 }
 
-.contenedor-video {
-  padding-bottom: 56.5%;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-}
+@media screen and (min-width: 480px) and (max-width: 780px){
+  .encabezado{
+    background: #00FF00;
+  }
 
-iframe {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+  .contenido{
+    width: 100%;
+  }
+
+  .contenido-lateral{
+    background: #2EFE9A;
+    width: 100%;
+  }
+
+  .post{
+    background: #81F7BE;
+  }
+
+  .pie-pagina{
+    background: #04B404;
+  }
+}
+@media screen and (max-width: 480px){
+  .encabezado{
+    background: #FFFF00;
+    height: 80px;
+  }
+
+  .contenido{
+    width: 100%;
+  }
+
+  .contenido-lateral{
+    background: #F3F781;
+    width: 100%;
+  }
+
+  .post{
+    background: #F3F781;
+  }
+
+  .pie-pagina{
+    background: #AEB404;
+  }
 }
