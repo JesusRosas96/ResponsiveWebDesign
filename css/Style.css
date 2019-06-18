@@ -44,21 +44,31 @@ p {
   text-align: center;
 }
 
-.contenedor {
-  background-color: red;
-  width: 80%;
-  height: 1000px;
-  margin: 0auto;
-  padding: 1em;
-}
-.columna {
-  background-color: white;
-  height: 30px;
-  margin-bottom: 1em;
+.contenedor-pequeño, .contenedor-grande {
+  background: #000000;
+  width: 50%;
 }
 
-.primera {width: 100%;}
-.segunda {width: 50%;}
-.tercera {width: 25%;}
-.cuarta {width: 75%;}
-.quinta {width: 10%;}
+img {
+  width: 100%;
+  max-width: 420px;
+}
+
+video {
+  width: 100%
+}
+
+.contenedor-video {
+  padding-bottom: 56.5%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
